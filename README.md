@@ -71,3 +71,92 @@ Avoid deleting data unless the dataset is large enough to absorb the loss.
 Use imputation methods to maintain dataset completeness.
 
 Forward and backward fill are efficient for time-series or ordered data.
+
+
+
+# 📊 Feature Engineering — Day 2  
+## Outlier Treatment & Feature Scaling
+
+This repository documents **Day 2** of my Feature Engineering learning series, where I focused on **handling outliers** and **scaling numerical features** — two critical steps in preparing data for machine learning models.
+
+---
+
+## 🎯 Topics Covered
+
+### 1️⃣ Outlier Detection & Handling
+
+Outliers can significantly impact model performance, especially for distance-based and statistical models. In this session, I explored multiple techniques to identify and treat outliers using **NumPy** and **Pandas**.
+
+#### 🔹 Techniques Used:
+- **IQR (Interquartile Range) Method**
+- **Z-Score Method**
+- **Capping / Clipping**
+- **Winsorization**
+
+#### 🔹 Libraries:
+- NumPy
+- Pandas
+
+---
+
+### 2️⃣ Feature Scaling
+
+Feature scaling ensures that all numerical features contribute equally to the model. Different algorithms behave differently depending on feature magnitude, so choosing the right scaling technique is important.
+
+#### 🔹 Scaling Techniques Implemented:
+- **Standardization (StandardScaler)**  
+  Scales data to have mean = 0 and standard deviation = 1.
+  
+- **Normalization (MinMaxScaler)**  
+  Scales data into a fixed range (usually 0 to 1).
+  
+- **Robust Scaling (RobustScaler)**  
+  Uses median and IQR, making it robust to outliers.
+
+#### 🔹 Library Used:
+- `sklearn.preprocessing`
+
+---
+
+## 🧠 Why This Matters
+
+- Prevents model bias caused by extreme values
+- Improves convergence speed of ML algorithms
+- Essential for algorithms like:
+  - Linear Regression
+  - Logistic Regression
+  - KNN
+  - SVM
+  - K-Means
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Python 🐍
+- NumPy
+- Pandas
+- Scikit-learn
+- Jupyter Notebook
+
+---
+
+## 📌 Learning Outcome
+
+By the end of this session, I gained hands-on experience in:
+- Identifying and treating outliers
+- Applying appropriate feature scaling techniques
+- Understanding when to use which scaler based on data distribution and model requirements
+
+---
+
+## 🚀 Next Steps
+
+Moving forward, I’ll be diving deeper into:
+- Feature transformation
+- Encoding categorical variables
+- Advanced feature selection techniques
+
+---
+
+📢 **Follow my LinkedIn series for daily hands-on learning in Data Science & Machine Learning.**
