@@ -159,4 +159,152 @@ Moving forward, I’ll be diving deeper into:
 
 ---
 
+# 📘 Feature Engineering – Day 3  
+## Handling Categorical Variables for Machine Learning
+
+---
+
+### 📌 Overview
+On Day 3 of my Machine Learning learning journey, I focused on **handling categorical variables** and converting them into numerical formats that machine learning models can understand.
+
+Since most ML algorithms work only with numerical data, choosing the **right encoding technique at the right time** is critical for model performance.
+
+---
+
+### 🎯 Objectives
+- Understand different types of categorical data
+- Learn **when and why** to use each encoding technique
+- Apply encoders correctly on a real-world dataset
+- Prepare an ML-ready dataset
+
+---
+
+### 📊 Dataset Used
+- **Loan Dataset**
+- Contains numerical, ordinal categorical, and nominal categorical features
+- Includes missing values and multiple category levels
+
+---
+
+## 🧠 Encoding Techniques: What & When to Use
+
+---
+
+### 1️⃣ Label Encoding
+
+**What it does:**  
+Converts categorical values into integer labels (e.g., Yes → 1, No → 0).
+
+**When to use:**  
+- Binary categorical variables  
+- Target variables  
+- Tree-based models (Decision Tree, Random Forest, XGBoost)
+
+**When NOT to use:**  
+- Nominal features with no order (can mislead distance-based models)
+
+**Example Use Case:**  
+Gender, Loan_Status
+
+---
+
+### 2️⃣ Ordinal Encoding
+
+**What it does:**  
+Assigns ordered numerical values based on the **natural ranking** of categories.
+
+**When to use:**  
+- Categorical features with a **clear order**
+- When order carries meaning
+
+**Why it matters:**  
+Preserves ranking information that the model can learn from.
+
+**Example Use Case:**  
+Poor < Average < Good < Excellent  
+Low < Medium < High
+
+---
+
+### 3️⃣ One-Hot Encoding
+
+**What it does:**  
+Creates separate binary columns for each category.
+
+**When to use:**  
+- Nominal categorical variables  
+- No natural order exists among categories  
+- Linear models, Logistic Regression, KNN, SVM
+
+**Advantages:**  
+- Prevents false ordinal relationships  
+- Safe and widely used
+
+**Disadvantages:**  
+- Increases dimensionality for high-cardinality features
+
+**Example Use Case:**  
+Property_Area, Education, Marital_Status
+
+---
+
+### 4️⃣ Frequency Encoding
+
+**What it does:**  
+Encodes categories based on how frequently they appear in the dataset.
+
+**When to use:**  
+- High-cardinality categorical variables  
+- When One-Hot Encoding causes too many columns
+
+**Advantages:**  
+- Reduces dimensionality  
+- Useful in large datasets
+
+**Caution:**  
+- Frequency may not always correlate with importance
+
+**Example Use Case:**  
+City names, Product IDs
+
+---
+
+## ⚙️ Implementation Approach
+
+- Identified categorical columns based on type:
+  - Ordinal
+  - Nominal
+- Applied appropriate encoders using **scikit-learn**
+- Combined numerical scaling and categorical encoding using **ColumnTransformer**
+- Converted all categorical values into numerical format safely
+
+---
+
+### 🛠️ Tools & Libraries Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+
+---
+
+### ✅ Outcome
+- Clear understanding of **which encoding to use and when**
+- Successfully transformed categorical variables into numerical features
+- Built a reusable preprocessing pipeline
+- Dataset is fully ready for machine learning models
+
+---
+
+### 🚀 Next Steps
+- Feature scaling
+- Model training
+- Model evaluation and optimization
+
+---
+
+📌 *This repository is part of my daily Machine Learning learning series.*
+
+
 📢 **Follow my LinkedIn series for daily hands-on learning in Data Science & Machine Learning.**
+
