@@ -303,7 +303,58 @@ City names, Product IDs
 
 ---
 
+
+
+# 📘 Machine Learning Learning Series — Day 4
+  # Categorical Encoding & Feature Scaling
+   --  📌 Overview
+   -  The focus of this day is on data preprocessing, specifically:
+   -  Converting categorical features into numerical form
+   - Applying and comparing feature scaling techniques
+    These steps are essential to make data suitable for machine learning models and to improve model performance.
+# 📂 Datasets Used
+## 1️⃣ Loan Approval Dataset
+- Used to practice categorical encoding techniques
+- Contains multiple categorical and numerical features
+## 2️⃣ Diabetes Dataset
+- Used to practice and compare feature scaling techniques
+- Primarily numerical features
+# 🔁 Techniques Covered
+- 🔹 Categorical Encoding
+  - Applied on the Loan Approval dataset:
+- One-Hot Encoding
+   -  Used for nominal categorical features
+   -  Prevents unintended ordinal relationships
+- Ordinal Encoding
+  - Used when categories have a meaningful order
+  - Preserves ranking information
+  - These encoders help transform categorical data into a machine-readable numerical format.
+# 🔹 Feature Scaling
+- Applied on the Diabetes dataset:
+# StandardScaler
+ -  Centers data to mean = 0 and standard deviation = 1
+ -  Best suited for normally distributed data
+# MinMaxScaler
+  - Scales values between 0 and 1
+  - Useful when features have fixed bounds
+# RobustScaler
+ -  Uses median and IQR
+ - Effective when the dataset contains outliers
+ -  Understanding when to use each scaler is critical for model accuracy.
+# 📁 Project Files
+- HandlingCategoricalMissingValues.ipynb
+- → Categorical encoding techniques on Loan Approval dataset
+# DailyTask1.ipynb
+→ Feature scaling techniques on Diabetes dataset
+Each notebook contains step-by-step preprocessing with explanations.
+# 🧠 Key Learnings
+- Machine learning models cannot work directly with categorical data
+- Choosing the right encoding method depends on the nature of the feature
+- Feature scaling is essential for distance-based and gradient-based algorithms
+- Different scalers behave differently depending on data distribution and outliers
+
 📌 *This repository is part of my daily Machine Learning learning series.*
+
 
 
 📢 **Follow my LinkedIn series for daily hands-on learning in Data Science & Machine Learning.**
