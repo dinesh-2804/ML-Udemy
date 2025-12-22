@@ -353,46 +353,59 @@ Each notebook contains step-by-step preprocessing with explanations.
 - Feature scaling is essential for distance-based and gradient-based algorithms
 - Different scalers behave differently depending on data distribution and outliers
 
-- 📘 ColumnTransformer — Day 5 (Machine Learning Learning Series)
-📌 Overview
-This repository contains my Day 5 learning work from the Machine Learning learning series.
-The main focus is on ColumnTransformer, a powerful preprocessing tool from scikit-learn used to handle datasets with mixed feature types.
-Most real-world datasets include both numerical and categorical features, and each requires different preprocessing techniques. ColumnTransformer allows us to apply the right transformation to the right column efficiently.
-🎯 Objectives
-Understand the purpose of ColumnTransformer
-Learn column-wise preprocessing
-Apply appropriate transformations to numerical and categorical data
-Practice the fit() and transform() workflow
-Prepare data for machine learning models
-🧠 Concepts Covered
-Numerical vs Categorical features
-Feature-wise preprocessing
-StandardScaler for numerical columns
-OneHotEncoder for nominal categorical columns
-OrdinalEncoder for ordered categorical columns
-Role of ColumnTransformer in ML pipelines
-📂 Notebooks Included
-ColumnTransformers.ipynb
-Focuses on conceptual understanding
-Explains how ColumnTransformer works
-practice_ColumnTransformer.ipynb
-Hands-on implementation
-Applies transformations on a dataset
-Outputs model-ready transformed data
-⚙️ Tools & Libraries Used
-Python
-NumPy
-Pandas
-Scikit-learn
-🚀 Key Takeaways
-ColumnTransformer enables clean and structured preprocessing
-Different data types require different transformations
-Proper preprocessing is critical for model performance
-ColumnTransformer is essential for scalable ML workflows
-📌 Next Steps
-Integrate ColumnTransformer with Pipeline
-Combine preprocessing and model training
-Apply the approach to real-world datasets
+ ## Day 5 (Machine Learning Learning Series)
+
+ # # 📘 ColumnTransformer 
+ 
+# 📌 Overview
+  - This repository contains my Day 5 learning work from the Machine Learning learning series.
+  - The main focus is on ColumnTransformer, a powerful preprocessing tool from scikit-learn used to handle datasets with mixed feature types.
+  - Most real-world datasets include both numerical and categorical features, and each requires different preprocessing techniques. ColumnTransformer allows us to apply the right transformation to the right column  efficiently.
+  
+## 🎯 Objectives
+  - Understand the purpose of ColumnTransformer
+  - Learn column-wise preprocessing
+  - Apply appropriate transformations to numerical and categorical data
+  - Practice the fit() and transform() workflow
+  - Prepare data for machine learning models
+    
+## 🧠 Concepts Covered
+  - Numerical vs Categorical features
+  - Feature-wise preprocessing
+  - StandardScaler for numerical columns
+  - OneHotEncoder for nominal categorical columns
+  - OrdinalEncoder for ordered categorical columns
+  - Role of ColumnTransformer in ML pipelines
+
+    
+## 📂 Notebooks Included
+  - ColumnTransformers.ipynb
+  - Focuses on conceptual understanding
+  - Explains how ColumnTransformer works
+  - practice_ColumnTransformer.ipynb
+  - Hands-on implementation
+  - Applies transformations on a dataset
+  - Outputs model-ready transformed data\
+
+    
+## ⚙️ Tools & Libraries Used
+  - Python
+  - NumPy
+  - Pandas
+  - Scikit-learn
+
+    
+##🚀 Key Takeaways
+  - ColumnTransformer enables clean and structured preprocessing
+  - Different data types require different transformations
+  - Proper preprocessing is critical for model performance
+  - ColumnTransformer is essential for scalable ML workflows
+
+    
+##📌 Next Steps
+  - Integrate ColumnTransformer with Pipeline
+  - Combine preprocessing and model training
+  - Apply the approach to real-world datasets
 
 📌 *This repository is part of my daily Machine Learning learning series.*
 
