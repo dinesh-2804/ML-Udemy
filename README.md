@@ -407,8 +407,86 @@ Each notebook contains step-by-step preprocessing with explanations.
   - Combine preprocessing and model training
   - Apply the approach to real-world datasets
 
-📌 *This repository is part of my daily Machine Learning learning series.*
 
+
+# Feature Selection (Numerical) — Day 6  
+Machine Learning Learning Series
+
+## 📌 Overview
+This repository contains the **Day 6** work of my Machine Learning learning series, focused on **Feature Selection techniques for numerical features**.  
+Feature selection helps improve model performance by removing irrelevant or redundant features, reducing overfitting, and improving interpretability.
+
+In this notebook, I applied multiple statistical and information-based methods to identify the most important numerical features.
+
+---
+
+## 📂 Files Included
+- `FeatureSelection(Numerical).ipynb` — Jupyter Notebook implementing numerical feature selection techniques
+
+---
+
+## 🔍 Feature Selection Techniques Covered
+
+### 1️⃣ Correlation Method
+- Measures the linear relationship between numerical features and the target variable.
+- Highly correlated features with the target are retained.
+- Features with very low correlation are candidates for removal.
+
+**When to use:**
+- Linear models
+- Quick baseline feature filtering
+- When relationships are expected to be linear
+
+---
+
+### 2️⃣ Variance Threshold
+- Removes features with very low variance.
+- Features with near-constant values carry little information for prediction.
+
+**When to use:**
+- High-dimensional datasets
+- Removing constant or near-constant numerical features
+- As a preprocessing step before modeling
+
+---
+
+### 3️⃣ Mutual Information
+- Measures the dependency between features and the target variable.
+- Captures both linear and non-linear relationships.
+- Higher mutual information score indicates more predictive power.
+
+**When to use:**
+- Non-linear models
+- Complex datasets
+- When feature–target relationships are unknown
+
+---
+
+## 🧠 Key Learnings
+- Feature selection improves model efficiency and generalization.
+- Different methods capture different types of relationships.
+- Combining multiple techniques leads to more reliable feature selection.
+- Numerical feature selection is a critical step before model training.
+
+---
+
+## 🛠️ Tools & Libraries Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Matplotlib / Seaborn (for analysis & visualization)
+
+---
+
+## 🚀 Next Steps
+- Apply selected features to machine learning models
+- Compare model performance before and after feature selection
+- Extend feature selection techniques to categorical data
+
+---
+
+📌 *This project is part of my continuous Machine Learning learning journey.*
 
 
 📢 **Follow my LinkedIn series for daily hands-on learning in Data Science & Machine Learning.**
