@@ -486,6 +486,86 @@ In this notebook, I applied multiple statistical and information-based methods t
 
 ---
 
+## Day 7 (Machine Learning Learning Series)
+
+# Feature Selection — Categorical Variables (Machine Learning)
+
+## 📌 Overview
+This project focuses on **Feature Selection techniques for categorical variables** in Machine Learning.  
+Feature selection is a critical preprocessing step that helps improve model performance, reduce overfitting, and enhance interpretability by selecting only the most relevant features.
+
+In this notebook, different **statistical and information-theoretic methods** are applied to identify important categorical features.
+
+---
+
+## 🎯 Objectives
+- Understand why feature selection is important
+- Apply feature selection techniques specifically for categorical variables
+- Identify the most relevant features for model training
+
+---
+
+## 🧠 Techniques Covered
+
+### 1️⃣ Mutual Information (MI)
+- Measures the **dependency between input features and the target variable**
+- Captures **both linear and non-linear relationships**
+- Higher MI score → higher relevance
+
+**When to use:**
+- When relationships between features and target may be non-linear
+- Works well with both classification and regression problems
+
+---
+
+### 2️⃣ Chi-Square Test (χ²)
+- Statistical test to check **association between categorical features and target**
+- Compares observed vs expected frequencies
+
+**When to use:**
+- Categorical input features
+- Categorical target variable
+- Data must be **non-negative**
+
+---
+
+### 3️⃣ SelectKBest
+- Used to select the **top K most important features**
+- Works with scoring functions like:
+  - `chi2`
+  - `mutual_info_classif`
+
+**When to use:**
+- When you want a fixed number of best features
+- Helpful for dimensionality reduction
+
+---
+
+## 🛠️ Tools & Libraries
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+
+---
+
+## 📂 Files Included
+- `Feature Selection (Categorical).ipynb` — Notebook with implementation and explanations
+
+---
+
+## 🚀 Key Learnings
+- Feature selection improves model efficiency and accuracy
+- Different techniques serve different data assumptions
+- Choosing the right method depends on feature type and problem statement
+
+---
+
+## 📎 Conclusion
+This project demonstrates practical implementation of **categorical feature selection techniques**, which are essential for building reliable and scalable machine learning models.
+
+---
+
 📌 *This project is part of my continuous Machine Learning learning journey.*
 
 
