@@ -566,6 +566,73 @@ This project demonstrates practical implementation of **categorical feature sele
 
 ---
 
+# Day 8 (Machine Learning Learning Series)
+
+# Image Data Preprocessing using OpenCV
+
+## 📌 Overview
+This project is part of my LinkedIn learning series focused on **Image Data Preprocessing**.  
+In this notebook, I explored how to read, transform, and manipulate image data using **OpenCV (cv2)** — a foundational step for computer vision and deep learning applications.
+
+The goal is to understand how raw image data can be converted into different formats suitable for analysis and modeling.
+
+---
+
+## 🛠️ Tools & Libraries Used
+- Python
+- OpenCV (cv2)
+- NumPy
+- Matplotlib
+
+---
+
+## 📂 Key Concepts Covered
+
+### 1. Image Importing
+- Loading images using `cv2.imread()`
+- Understanding image shape and pixel structure
+
+### 2. Color Space Conversions
+- **BGR to Grayscale**
+- **BGR to RGB**
+- Black & White image representation
+- Visualization using Matplotlib
+
+### 3. Image Transformations
+- **Image Rotation (45°)**
+- **Image Flipping**
+  - Horizontal flip
+  - Vertical flip
+
+### 4. Visualization
+- Displaying images using `matplotlib.pyplot`
+- Comparing original vs transformed images
+
+---
+
+## 🎯 Why Image Preprocessing Matters
+- Improves model performance
+- Reduces noise and unnecessary information
+- Converts images into model-friendly formats
+- Essential for Computer Vision & Deep Learning pipelines
+
+---
+
+## 📁 File Structure
+- `Image_Data_Preprocessing.ipynb` – Main notebook containing all preprocessing steps
+
+---
+
+## 🚀 Next Steps
+- Image resizing & normalization
+- Edge detection
+- Feature extraction
+- Applying preprocessing for CNN models
+
+---
+
+
+
 📌 *This project is part of my continuous Machine Learning learning journey.*
 
 
